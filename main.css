@@ -37,6 +37,14 @@
     --radius-md: 12px;
     --radius-lg: 22px;
     --radius-full: 9999px;
+    /*----------------*/
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+    --space-xxxl: 64px;
 
 }
 body{
@@ -149,4 +157,80 @@ body{
     background: var(--btn-blue);
     color:var(--white) ;
 }
+/*-----------------------------------cards------------------------------------------*/
+.main-card{
+    width: 527px;
+    height: 287px;
+    border-radius: var(--radius-lg);
+    background:var(--white) ;
+    
+    
+}
+.card-h2{
+    color: var(--text-blue);
+    font-size: var(--text-2xl) ;
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-sm);
+}
+.card-p{
+    font-size: var(--text-lg);
+    color: var(--text-blue);
+    line-height: 1.6;
 
+}
+.side-card{
+    width: 320px; 
+    height: 234px;
+    background: var(--light-blue);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    color: var(--white);
+    font-size:var(--text-lg) ;
+
+
+}
+.edit-card{
+    width: 639px;
+    height: 498px;
+    border-radius: var(--radius-lg);
+    background:var(--white) ;
+
+}
+.card{
+    width: 370px;
+    height: 190px;
+    color:var(--primary-blue) ;
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    border-radius:var(--radius-lg) ;
+    text-align: center;
+    padding: var(--space-md);
+}
+.card-approve{
+    background: var(--light-green);
+
+}
+.card-pend{
+    background: var(--light-yellow);
+}
+.card-reject{
+    background: var(--light-red);
+
+}
+.card-staff{
+    width: 247px;
+    height: 131px;
+    background: var(--card-blue);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    border-radius:var(--radius-lg) ;   
+}
+.card-staff-h3{
+    color: var(--black);
+    margin-bottom: var(--space-xl);
+    
+}
+.card-staff-p{
+    color: var(--white);
+
+}
