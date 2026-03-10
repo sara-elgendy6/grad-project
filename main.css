@@ -1,0 +1,152 @@
+/*-------variables---------------------*/
+:root {
+    --primary-blue:#1F2937;
+    --secondary-blue:#186F8F80;            /*btn hover--------*/
+    --light-blue:#186F8F26;            /*btn side bar--------*/
+    --text-blue:#202A38;
+    --card-blue:#80BFDD;
+    --start-blue:#384A63;               /*start login*/
+    --end-blue:#58759D;            /*gradient  at login page*/
+    --btn-blue:#1D4155;
+    --dark-red:#FC1515;  
+    --light-red:#E6B2B2;    
+    --light-yellow:#F2F465;    
+    --dark-green: #3FC856;    
+    --light-green:#BDEBBF; 
+    --white: #FFFFFF;
+    --black:#000000;
+    --light-gray:#D9D9D9;
+    /*---font weight--*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700; 
+    /*font family*/
+    --font-primary: "Instrument Sans", sans-serif;
+    --font-secondary: "KyivType Sans", sans-serif;
+    /* font size*/
+    --text-lg:  1.25rem;  /* 20px */
+    --text-md:  1.5rem;    /* 24px  */
+    --text-xl:  1.62rem;  /* 26px */
+    --text-2xl: 2rem;     /* 32px */
+    --text-3xl: 2.25rem;  /* 36px */
+    --text-4xl: 2.5rem;   /* 40px */
+   --text-5xl: 3rem;     /* 48px */
+    /*--border radius---*/
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 22px;
+    --radius-full: 9999px;
+
+}
+body{
+    background: var(--light-gray);
+}
+/*-----------sidebar----------------*/
+.side-bar{
+    width: 350px;
+    height: 100vh;
+    background: var(--primary-blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*--------------bottons--------*/
+.btn-log{
+    background: linear-gradient(82deg, var(--start-blue), var(--end-blue));
+    width: 382px;
+    height: 86px;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    font-family: var( --font-primary);
+    color: var( --white);
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-size:var(--text-4xl) ;
+
+}
+/*------btn use with btn-blue ,red -,save---------*/
+.btn{
+    width: 270px;
+    height: 70px;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var( --white);
+    text-align: center;
+    font-weight: var(--font-bold);
+    font-size:var( --text-xl) ;
+}
+.btn-blue{
+    background: var(--btn-blue); 
+}
+.btn-red{
+    background-color:var(--dark-red) ;
+}
+.btn-save{
+    background: linear-gradient(to bottom, var(--primary-blue), var(--secondary-blue));
+    border-radius: var(--radius-lg);
+    justify-content: center;
+    gap: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+/*---------------------------------------------*/
+.btn-sidebar{
+    width: 320px;
+    height:85px;
+    background: var(--light-blue);
+    font-weight: var(--font-semibold);
+    font-size:var(--text-2xl) ;
+    justify-content: center;
+    gap: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+.btn-sidebar:hover{
+    background: var(--secondary-blue); 
+}
+.btn-level{
+    width: 145px;
+    height: 50px;
+    background: var(--white);
+    text-align: center;
+    color:var(--black)  ;
+    font-size: var(--text-md);
+    font-weight: var(--font-semibold);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+}
+.btn-level:hover{
+    background: var(--primary-blue);
+    color:var(--white) ;
+
+}
+.btn-edit{
+    width:126px ;
+    height: 62px;
+    background: var(--white);
+    text-align: center;
+    color:var(--black)  ;
+    font-size: var(--text-md);
+    font-weight: var(--font-semibold);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+
+}
+.btn-edit:hover{
+    background: var(--btn-blue);
+    color:var(--white) ;
+}
+
