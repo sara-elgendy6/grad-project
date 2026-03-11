@@ -1,21 +1,21 @@
 /*-------variables---------------------*/
 :root {
-    --primary-blue:#1F2937;
+    --color-primary:#1F2937;
     --secondary-blue:#186F8F80;            /*btn hover--------*/
-    --light-blue:#186F8F26;            /*btn side bar--------*/
-    --text-blue:#202A38;
-    --card-blue:#80BFDD;
-    --start-blue:#384A63;               /*start login*/
-    --end-blue:#58759D;            /*gradient  at login page*/
-    --btn-blue:#1D4155;
-    --dark-red:#FC1515;  
-    --light-red:#E6B2B2;    
-    --light-yellow:#F2F465;    
-    --dark-green: #3FC856;    
-    --light-green:#BDEBBF; 
+    --color-sidebar-btn:#186F8F26;            /*btn side bar--------*/
+    --color-text-primary:#202A38;
+    --color-card-bg:#80BFDD;
+    --gradient-login-start:#384A63;               /*start login*/
+    --gradient-login-end:#58759D;            /*gradient  at login page*/
+    --color-btn-primary:#1D4155;
+    --color-danger:#FC1515;  
+    --color-danger-light:#E6B2B2;    
+    --color-warning:#F2F465;    
+    --color-success: #3FC856;    
+    --color-success-light:#BDEBBF; 
     --white: #FFFFFF;
     --black:#000000;
-    --light-gray:#D9D9D9;
+    --color-background:#D9D9D9;
     /*---font weight--*/
     --font-regular: 400;
     --font-medium: 500;
@@ -47,14 +47,26 @@
     --space-xxxl: 64px;
 
 }
+.demo{
+
+margin-top:20px;
+margin-left: 400px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+section{
+margin-bottom:60px;
+}
 body{
-    background: var(--light-gray);
+    background: var(--color-background);
+    font-family: var(--font-primary);
 }
 /*-----------sidebar----------------*/
 .side-bar{
     width: 350px;
     height: 100vh;
-    background: var(--primary-blue);
+    background: var(--color-primary);
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +74,7 @@ body{
 
 /*--------------bottons--------*/
 .btn-log{
-    background: linear-gradient(82deg, var(--start-blue), var(--end-blue));
+    background: linear-gradient(82deg, var(--gradient-login-start), var(--gradient-login-end));
     width: 382px;
     height: 86px;
     border: none;
@@ -88,13 +100,13 @@ body{
     font-size:var( --text-xl) ;
 }
 .btn-blue{
-    background: var(--btn-blue); 
+    background: var(--color-btn-primary); 
 }
 .btn-red{
-    background-color:var(--dark-red) ;
+    background-color:var(--color-danger) ;
 }
 .btn-save{
-    background: linear-gradient(to bottom, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(to bottom, var(--color-primary), var(--secondary-blue));
     border-radius: var(--radius-lg);
     justify-content: center;
     gap: 0.5rem;
@@ -105,7 +117,7 @@ body{
 .btn-sidebar{
     width: 320px;
     height:85px;
-    background: var(--light-blue);
+    background: var(--color-sidebar-btn);
     font-weight: var(--font-semibold);
     font-size:var(--text-2xl) ;
     justify-content: center;
@@ -135,7 +147,7 @@ body{
     transition: all 0.3s ease;
 }
 .btn-level:hover{
-    background: var(--primary-blue);
+    background: var(--color-primary);
     color:var(--white) ;
 
 }
@@ -154,7 +166,7 @@ body{
 
 }
 .btn-edit:hover{
-    background: var(--btn-blue);
+    background: var(--color-btn-primary);
     color:var(--white) ;
 }
 /*-----------------------------------cards------------------------------------------*/
@@ -166,22 +178,22 @@ body{
     
     
 }
-.card-h2{
-    color: var(--text-blue);
+.card h2{
+    color: var(--color-text-primary);
     font-size: var(--text-2xl) ;
     font-weight: var(--font-semibold);
     margin-bottom: var(--space-sm);
 }
-.card-p{
+.card p{
     font-size: var(--text-lg);
-    color: var(--text-blue);
+    color: var(--color-text-primary);
     line-height: 1.6;
 
 }
 .side-card{
     width: 320px; 
     height: 234px;
-    background: var(--light-blue);
+    background: var(--color-sidebar-btn);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     color: var(--white);
@@ -199,38 +211,36 @@ body{
 .card{
     width: 370px;
     height: 190px;
-    color:var(--primary-blue) ;
+    color:var(--color-primary) ;
     font-size: var(--text-2xl);
     font-weight: var(--font-semibold);
     border-radius:var(--radius-lg) ;
     text-align: center;
     padding: var(--space-md);
 }
-.card-approve{
-    background: var(--light-green);
-
+.card-success{
+background:var(--color-success-light);
 }
-.card-pend{
-    background: var(--light-yellow);
+.card-warning{
+background:var(--color-warning);
 }
-.card-reject{
-    background: var(--light-red);
-
+.card-danger{
+background:var(--color-danger-light);
 }
 .card-staff{
     width: 247px;
     height: 131px;
-    background: var(--card-blue);
+    background: var(--color-card-bg);
     font-size: var(--text-2xl);
     font-weight: var(--font-semibold);
     border-radius:var(--radius-lg) ;   
 }
-.card-staff-h3{
+.card-staff h3{
     color: var(--black);
     margin-bottom: var(--space-xl);
     
 }
-.card-staff-p{
+.card-staff p{
     color: var(--white);
 
 }
