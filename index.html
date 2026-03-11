@@ -17,17 +17,17 @@
 <div class="demo">
 
 <h3>Sidebar Button</h3>
-<button class="btn-sidebar">
+<button type="button" class="btn-sidebar">
 .btn-sidebar
 </button>
 
 <h3>Main Buttons</h3>
 
-<button class="btn btn-blue">
+<button type="button" class="btn btn-blue">
 .btn btn-blue
 </button>
 
-<button class="btn btn-red">
+<button  type="button" class="btn btn-red">
 .btn btn-red
 </button>
 
@@ -35,23 +35,37 @@
 
 <h3>Table Buttons academic advisor</h3>
 
-<button class="btn-edit">
+<button  type="button" class="btn-edit">
 .btn-edit
 </button>
 
-<button class="btn btn-save">
+<button type="button" class="btn btn-save">
 .btn btn-save
 </button>
 
 <h3>Table Buttons admain</h3>
-<button class="btn-level">
+<button type="button" class="btn-level">
 .btn-level
 </button>
 
 <h3>Login Button</h3>
 
-<button class="btn-log">
+<button type="button" class="btn-log">
 .btn-log
+</button>
+
+<h3>Buttons  student</h3>
+
+<button type="button" class="btn-back">
+Back Assignment
+</button>
+
+<button type="button" class="btn-choose">
+Choose File
+</button>
+
+<button type="button" class="btn-choose btn-submit">
+Submit Assignment
 </button>
 
 </div>
@@ -92,16 +106,227 @@
 <div class="side-card">
 Side  bar Card
 </div>
-<div class="edit-card">
+
+<div class="edit-card-acad">
  table edit  Card   academic advisor
 </div>
 <div class="card-staff">
     <h3> admin card</h3>
  <p>  admin card above table </p>  
 </div>
+ 
+<!-- Edit Card -->
+<div class="edit-card">
 
+  <!-- Header -->
+  <div class="edit-card-header">
+    Edit
+  </div>
+
+  <!-- Title -->
+  <h2>Make Change</h2>
+
+  <!-- Form -->
+  <form>
+    <!-- Name Field -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" type="text" value="Dr. Ahmed Ali">
+    </div>
+
+    <!-- ID Field -->
+    <div class="form-group">
+      <label for="id">ID:</label>
+      <input id="id" type="text" value="001">
+    </div>
+
+    <!-- Role Field -->
+    <div class="form-group">
+      <label for="role">Role:</label>
+      <select id="role">
+        <option>Doctor</option>
+        <option>Professor</option>
+        <option>Assistant</option>
+      </select>
+    </div>
+
+    <!-- Department Field -->
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <select id="department">
+        <option>Electrical Engineering</option>
+        <option>Computer Science</option>
+        <option>Mechanical Engineering</option>
+      </select>
+    </div>
+
+    <!-- Availability Status Field -->
+    <div class="form-group">
+      <label for="status">Availability Status:</label>
+      <select id="status">
+        <option>Available</option>
+        <option>Unavailable</option>
+      </select>
+    </div>
+
+    <!-- Note Field -->
+    <div class="form-group">
+      <label for="note">Note:</label>
+      <textarea id="note" placeholder="Write your note here..."></textarea>
+    </div>
+  </form>
+
+</div>
+<!-- Request Card -->
+<div class="request-card">
+
+  <!-- Header -->
+  <div class="request-card-header">
+    Request Details
+  </div>
+
+  <!-- Section: Student Info -->
+  <h3>Student Information</h3>
+  <div class="info-row">
+    <span>Name:</span>
+    <span>Aya Mahmoud</span>
+  </div>
+  <div class="info-row">
+    <span>ID:</span>
+    <span>200235</span>
+  </div>
+  <div class="info-row">
+    <span>Level:</span>
+    <span>Freshman</span>
+  </div>
+  <div class="info-row">
+    <span>GPA:</span>
+    <span>3.26</span>
+  </div>
+
+  <!-- Section: Request Type -->
+  <h3>Request Type</h3>
+  <div class="form-group">
+    <label for="request-type">Request:</label>
+    <select id="request-type">
+      <option>Drop Course: Math2</option>
+      <option>Schedule Change</option>
+      <option>Leave Request</option>
+    </select>
+  </div>
+
+  <!-- Section: Advisor Decision -->
+  <h3>Advisor Decision</h3>
+  <div class="form-group">
+    <label for="decision">Decision:</label>
+    <select id="decision">
+      <option>Approve</option>
+      <option>Reject</option>
+      <option>Pending</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    <textarea id="comment" placeholder="Write your comment..."></textarea>
+  </div>
+ 
+
+</div>
 </div>
 
 </section>
+
+
+  <!-- ══ ====================Available Courses ══ -->
+  <table class="reg-table">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course Name</th>
+        <th>Type</th>
+        <th>Credits</th>
+        <th>Time And Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-code">CSE101</td>
+        <td>Intro to Programming</td>
+        <td>Mandatory</td>
+        <td>3</td>
+        <td>Tuesday at 9:30 AM</td>
+        <td>Open</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td class="col-code">CSE102</td>
+        <td>Computer Basics</td>
+        <td>Mandatory</td>
+        <td>2</td>
+        <td>Monday at 9:00 AM</td>
+        <td>Open</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="col-code">CSE201</td>
+        <td>Data Structures</td>
+        <td>Mandatory</td>
+        <td>3</td>
+        <td>Sunday – Online</td>
+        <td>Locked</td>
+        <td>+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ══ Selected Courses ══ -->
+ 
+  <table class="reg-table reg-table--selected">
+    <!--<thead>
+      <tr>
+        <th>Code</th>
+        <th>Course Name</th>
+        <th>Type</th>
+        <th>Credits</th>
+        <th>Time And Date</th>
+        <th>Remove</th>
+      </tr>
+    </thead>-->
+    <tbody>
+      <tr>
+        <td class="col-code">CSE101</td>
+        <td>Database 1</td>
+        <td>Mandatory</td>
+        <td>3</td>
+        <td>Tuesday at 9:30 AM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="col-code">CSE102</td>
+        <td>Computer Basics</td>
+        <td>Mandatory</td>
+        <td>3</td>
+        <td>Monday at 9:00 AM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="col-code">CSE201</td>
+        <td>Math 1</td>
+        <td>Mandatory</td>
+        <td>3</td>
+        <td>Sunday – Online</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
 </body>
 </html>
+
+

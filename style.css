@@ -169,6 +169,37 @@ body{
     background: var(--color-btn-primary);
     color:var(--white) ;
 }
+.btn-back{
+    width: 479px;
+    height: 66px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    background: var(--color-primary);
+    color: var(--white);
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    justify-content: center;
+    gap: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+}
+.btn-choose{
+    width: 342px;
+    height: 61px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    background: var(--color-background);
+    color: var(--black);
+    text-align: center;
+    font-size: var(--text-2xl);
+     border: none;
+}
+.btn-submit{
+    background: var(--color-card-bg);
+}
+
+
 /*-----------------------------------cards------------------------------------------*/
 .main-card{
     width: 527px;
@@ -201,7 +232,7 @@ body{
 
 
 }
-.edit-card{
+.edit-card-acad{
     width: 639px;
     height: 498px;
     border-radius: var(--radius-lg);
@@ -243,4 +274,311 @@ background:var(--color-danger-light);
 .card-staff p{
     color: var(--white);
 
+}
+/* =========================
+   Edit Card
+========================= */
+.form-group{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left:1rem ;
+
+}
+
+.edit-card {
+    width:700px;
+    height: 776px;
+
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* =========================
+header
+========================= */
+.edit-card-header{
+    background: var(--color-primary);
+    color: var(--white);
+    font-weight: var(--font-semibold);
+   font-size: var(--text-2xl);
+
+    padding: 1rem;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+/* =========================
+   Title
+========================= */
+
+.edit-card h2 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: var(--black);
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   Labels
+========================= */
+
+.edit-card label {
+    margin-bottom: 0.5rem;
+
+    font-size: var(--text-lg);
+    color: var(--black);
+}
+
+/* =========================
+   Inputs
+========================= */
+
+.edit-card input,
+.edit-card select,
+.edit-card textarea {
+   
+    padding: 0.75rem 1rem;
+
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: var(--radius-sm);
+
+    background: var(--color-background);
+
+    font-size: var(--text-lg);
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+/* sizes */
+
+.edit-card input{
+    height: 45px;
+     width: 234px;
+}
+
+.edit-card select{
+    height: 45px;
+    width: 234px;
+}
+
+.edit-card textarea{
+    min-height: 94px;
+     width: 234px;
+    resize: vertical;
+}
+
+.edit-card input:hover,
+.edit-card select:hover,
+.edit-card textarea:hover{
+    border-color: #bbb;
+}
+
+.edit-card input:focus,
+.edit-card select:focus,
+.edit-card textarea:focus {
+    border-color: var(--color-primary);
+    background: var(--white);
+}
+/*--------------*//* =========================
+   Request Card
+========================= */
+.request-card {
+    width: 511px;
+    height: 776px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+    font-family: var(--font-family, Arial, sans-serif);
+}
+
+/* Header */
+.request-card-header {
+
+    background: var(--color-primary);
+    color: var(--white);
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+   padding: 1rem;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    text-align: center;
+    padding: 1rem 2rem; /* نستخدم البادينج الأفقي مساوي لبادينج الكارت */
+    margin: -2rem -2rem 0 -2rem; /* يلغي البادينج الداخلي للكارت */
+}
+
+/* Section Titles */
+.request-card h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-dark);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.25rem;
+}
+
+/* Info Rows */
+.info-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: var(--text-base);
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.info-row span:first-child {
+    font-weight: var(--font-medium);
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 0; 
+    margin-bottom: 0.75rem; 
+}
+
+.form-group label {
+    width: 150px; 
+    font-size: var(--text-base);
+    color: var(--black);
+    margin: 0; 
+}
+
+/* Inputs */
+.form-group select,
+.form-group textarea {
+    flex: 1; 
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: var(--radius-sm);
+    background: var(--color-background); 
+    font-size: var(--text-base);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    background: var(--white);
+}
+/* ================================================
+   SELECTED COURSES SECTION
+   ================================================ */
+.selected-courses {
+  margin-top: var(--space-xl);
+}
+
+.selected-courses__label {
+  font-family: var(--font-primary);
+  font-size: 0.88rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-sm) 0;
+  opacity: 0.75;
+}
+
+/* ================================================
+   TABLE COMPONENT
+   ================================================ */
+.reg-table {
+  width: 80%;
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--color-background);
+  transition: box-shadow 0.2s ease;
+}
+
+/* ── Header ── */
+.reg-table thead tr {
+  background: var(--color-btn-primary);
+}
+
+.reg-table thead th {
+  color: var(--white);
+  font-weight: var(--font-semibold);
+  font-size: 0.82rem;
+  text-align: center;
+  padding: var(--space-sm) var(--space-md);
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.reg-table thead th:last-child {
+  border-right: none;
+}
+
+/* ── Body ── */
+.reg-table tbody tr {
+  border-bottom: 1px solid var(--color-background);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.reg-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.reg-table tbody tr:nth-child(even) {
+  background: #f8fafc; /* تباين الصفوف */
+}
+
+.reg-table tbody tr:hover {
+  background: rgba(24, 111, 143, 0.08); /* تأثير hover خفيف */
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
+.reg-table tbody td {
+  text-align: center;
+  padding: var(--space-sm) var(--space-md);
+  vertical-align: middle;
+  border-right: 1px solid var(--color-background);
+}
+
+.reg-table tbody td:last-child {
+  border-right: none;
+}
+
+/* ── Course code cell ── */
+.reg-table .col-code {
+  font-weight: var(--font-semibold);
+  color: var(--color-btn-primary);
+  letter-spacing: 0.02em;
+}
+
+/* ── Selected table modifier ── */
+.reg-table--selected thead tr {
+  background: var(--color-card-bg);
+}
+
+.reg-table--selected thead th {
+  color: var(--color-primary);
+  font-size: 0.78rem;
+}
+.reg-table + .reg-table {
+  margin-top: 2rem; /* أو أي قيمة تحبيها */
 }
