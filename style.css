@@ -580,5 +580,5 @@ header
   font-size: 0.78rem;
 }
 .reg-table + .reg-table {
-  margin-top: 2rem; /* أو أي قيمة تحبيها */
+  margin-top: 2rem; 
 }
