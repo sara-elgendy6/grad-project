@@ -350,7 +350,7 @@ body{
 .card{
     width: 370px;
     height: 190px;
-    color:var(--color-primary) ;
+    color:var(--black) ;
     font-size: var(--text-2xl);
     font-weight: var(--font-semibold);
     border-radius:var(--radius-lg) ;
@@ -383,6 +383,11 @@ background:var(--color-danger-light);
     color: var(--white);
 
 }
+.card-admin{
+    background: var(--color-primary);
+    
+}
+
 /* =========================
    Edit Card
 ========================= */
@@ -589,104 +594,55 @@ header
     border-color: var(--color-primary);
     background: var(--white);
 }
-/* ================================================
-   SELECTED COURSES SECTION
-   ================================================ */
-.selected-courses {
-  margin-top: var(--space-xl);
-}
-
-.selected-courses__label {
-  font-family: var(--font-primary);
-  font-size: 0.88rem;
-  font-weight: var(--font-semibold);
-  color: var(--color-text-primary);
-  margin: 0 0 var(--space-sm) 0;
-  opacity: 0.75;
-}
+/*
 
 /* ================================================
    TABLE COMPONENT
    ================================================ */
-.reg-table {
-  width: 80%;
+table {
+  width: 90%;
   border-collapse: collapse;
-  font-family: var(--font-primary);
-  font-size: 0.875rem;
-  color: var(--color-text-primary);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  box-shadow: 0 0 0 1px var(--color-background);
-  transition: box-shadow 0.2s ease;
+  border-spacing: 0;
 }
 
-/* ── Header ── */
-.reg-table thead tr {
-  background: var(--color-btn-primary);
+.table-header th:first-child {
+  border-radius: var(--radius-md) 0 0 0;
 }
 
-.reg-table thead th {
+.table-header th:last-child {
+  border-radius: 0 var(--radius-md) 0 0;
+}
+.table-header {
+  background: var(--color-primary);
+}
+
+.table-header th {
   color: var(--white);
-  font-weight: var(--font-semibold);
-  font-size: 0.82rem;
-  text-align: center;
+  padding: var(--space-sm) var(--space-md) ;
+  text-align: left;
+  font-size: var(--text-2xl);
+  border-left: .5px solid var(--white);
+}
+
+.table-row {
+  border-bottom: .5px solid var(--color-btn-primary);
+  background: var(--white);
+}
+
+.table-row td {
   padding: var(--space-sm) var(--space-md);
-  letter-spacing: 0.025em;
-  white-space: nowrap;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
+   border-left: .5px solid var(--color-btn-primary);
 }
-
-.reg-table thead th:last-child {
-  border-right: none;
+/*----------------------*/
+.instructor-comment {
+  width: 70%;
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--color-warning);
+  color: var(--black);
 }
-
-/* ── Body ── */
-.reg-table tbody tr {
-  border-bottom: 1px solid var(--color-background);
-  transition: background 0.2s ease, transform 0.1s ease;
-}
-
-.reg-table tbody tr:last-child {
-  border-bottom: none;
-}
-
-.reg-table tbody tr:nth-child(even) {
-  background: #f8fafc; /* تباين الصفوف */
-}
-
-.reg-table tbody tr:hover {
-  background: rgba(24, 111, 143, 0.08); /* تأثير hover خفيف */
-  cursor: pointer;
-  transform: translateY(-1px);
-}
-
-.reg-table tbody td {
-  text-align: center;
-  padding: var(--space-sm) var(--space-md);
-  vertical-align: middle;
-  border-right: 1px solid var(--color-background);
-}
-
-.reg-table tbody td:last-child {
-  border-right: none;
-}
-
-/* ── Course code cell ── */
-.reg-table .col-code {
-  font-weight: var(--font-semibold);
-  color: var(--color-btn-primary);
-  letter-spacing: 0.02em;
-}
-
-/* ── Selected table modifier ── */
-.reg-table--selected thead tr {
-  background: var(--color-card-bg);
-}
-
-.reg-table--selected thead th {
-  color: var(--color-primary);
-  font-size: 0.78rem;
-}
-.reg-table + .reg-table {
-  margin-top: 2rem; 
+.instructor-warning{
+    background: var(--color-danger-light);
+     color: var(--color-primary);
 }

@@ -154,6 +154,10 @@ Side  bar Card
     <h3> admin card</h3>
  <p>  admin card above table </p>  
 </div>
+<div class="card-staff card-admin">
+    <h3> admin card</h3>
+ <p>  admin card above table </p>  
+</div>
  
 <!-- Edit Card -->
 <div class="edit-card">
@@ -279,92 +283,52 @@ Side  bar Card
 
 
   <!-- ══ ====================Available Courses ══ -->
-  <table class="reg-table">
-    <thead>
-      <tr>
-        <th>Code</th>
-        <th>Course Name</th>
-        <th>Type</th>
-        <th>Credits</th>
-        <th>Time And Date</th>
-        <th>Status</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="col-code">CSE101</td>
-        <td>Intro to Programming</td>
-        <td>Mandatory</td>
-        <td>3</td>
-        <td>Tuesday at 9:30 AM</td>
-        <td>Open</td>
-        <td>+</td>
-      </tr>
-      <tr>
-        <td class="col-code">CSE102</td>
-        <td>Computer Basics</td>
-        <td>Mandatory</td>
-        <td>2</td>
-        <td>Monday at 9:00 AM</td>
-        <td>Open</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td class="col-code">CSE201</td>
-        <td>Data Structures</td>
-        <td>Mandatory</td>
-        <td>3</td>
-        <td>Sunday – Online</td>
-        <td>Locked</td>
-        <td>+</td>
-      </tr>
+  <table>
+  <thead>
+    <tr class="table-header">
+      <th>Code</th>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Type</th>
+      <th>Students</th>
+      <th>Graduates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row">
+      <td>CSE08</td>
+      <td>Programming 2</td>
+      <td>Freshman</td>
+      <td>Mandatory</td>
+      <td>28</td>
+      <td>8</td>
+    </tr>
+
+    <tr class="table-row">
+      <td>CSE101</td>
+      <td>Intro to Programming</td>
+      <td>Freshman</td>
+      <td>Mandatory</td>
+      <td>23</td>
+      <td>0</td>
+    </tr>
+    <tr class="table-row">
+      <td>CSE205</td>
+      <td>Data Structures</td>
+      <td>Sophomore</td>
+      <td>Mandatory</td>
+      <td>21</td>
+      <td>5</td>
+    </tr>
     </tbody>
   </table>
-
-  <!-- ══ Selected Courses ══ -->
- 
-  <table class="reg-table reg-table--selected">
-    <!--<thead>
-      <tr>
-        <th>Code</th>
-        <th>Course Name</th>
-        <th>Type</th>
-        <th>Credits</th>
-        <th>Time And Date</th>
-        <th>Remove</th>
-      </tr>
-    </thead>-->
-    <tbody>
-      <tr>
-        <td class="col-code">CSE101</td>
-        <td>Database 1</td>
-        <td>Mandatory</td>
-        <td>3</td>
-        <td>Tuesday at 9:30 AM</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td class="col-code">CSE102</td>
-        <td>Computer Basics</td>
-        <td>Mandatory</td>
-        <td>3</td>
-        <td>Monday at 9:00 AM</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td class="col-code">CSE201</td>
-        <td>Math 1</td>
-        <td>Mandatory</td>
-        <td>3</td>
-        <td>Sunday – Online</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
+ <!-- ══ ====================instructor-comment ══ -->
+   <div class="instructor-comment">
+    Instructor comment will appear here after grading.
+  </div>
+ <div class="instructor-comment instructor-warning">
+    Instructor comment will appear here after grading.
+  </div>
 
 </body>
 </html>
